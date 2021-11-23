@@ -29,17 +29,20 @@ h1 {
 }
 
 .box {
-    width: 100px;
-    height: 50px;
+    width: 120px;
+    height: 100px;
+    margin: 50px;
     background-color: #e1e6e6;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: 50px;
 }
 
 i {
     color: black;
+    font-size: 35px;
 }
 
 .orange {
