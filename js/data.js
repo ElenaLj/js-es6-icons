@@ -116,17 +116,37 @@ const icone = [
 //Milestone 1
 
 //ciclo for per inserire dinamicamente le icone con template literal
+// let elements = "";
 
+// for (let i = 0; i < icone.length; i++) {
+// 	elements += `
+// 	<div class="box">
+//         <i class="${icone[i].family} ${icone[i].prefix}${icone[i].name}"></i>
+//         <span>${icone[i].name}</span>
+//     </div>
+// 	`
+// }
+// console.log(elements);
+
+// //inserisco gli elementi creati nel container
+// const itemsContainer = document.getElementById("container");
+
+// // output HTML
+// itemsContainer.innerHTML = elements;
+
+
+//Milestone 1 con metodo forEach
 let elements = "";
 
-for (let i = 0; i < icone.length; i++) {
+icone.forEach((icon) => {
 	elements += `
 	<div class="box">
-        <i class="${icone[i].family} ${icone[i].prefix}${icone[i].name}"></i>
-        <span>${icone[i].name}</span>
+        <i class="${icon.family} ${icon.prefix}${icon.name}"></i>
+        <span>${icon.name}</span>
     </div>
 	`
-}
+});
+
 console.log(elements);
 
 //inserisco gli elementi creati nel container
@@ -134,6 +154,3 @@ const itemsContainer = document.getElementById("container");
 
 // output HTML
 itemsContainer.innerHTML = elements;
-
-//
-
