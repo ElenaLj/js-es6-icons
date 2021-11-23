@@ -135,7 +135,7 @@ const icone = [
 // itemsContainer.innerHTML = elements;
 
 
-//Milestone 1 con metodo forEach
+//Milestone 1 con metodo forEach + Milestone 2
 let elements = "";
 
 icone.forEach((icon) => {
@@ -145,6 +145,17 @@ icone.forEach((icon) => {
         <span>${icon.name}</span>
     </div>
 	`
+	if(icon.color == "orange") {
+		console.log("Orange");
+		elements.classList.add("orange");
+	} 
+	else if (icon.color == "green") {
+		console.log("Green");
+		elements.classList.add("green");
+	} else {
+		console.log("Blue");
+		elements.classList.add("blue");
+	}
 });
 
 console.log(elements);
