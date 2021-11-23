@@ -1,0 +1,19 @@
+/* *** commons *** */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #aa96b4;
+}
+
+#container  {
+    margin: 0 auto;
+    width: 80%;
+}
+
+i {
+    color: black;
+}

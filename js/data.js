@@ -122,9 +122,18 @@ let elements = "";
 for (let i = 0; i < icone.length; i++) {
 	elements += `
 	<div class="box">
-        <i class="${icone[i].family}/${icone[i].prefix}${icone[i].type}"></i>
-        <span class="element-name"></span>
+        <i class="${icone[i].family} ${icone[i].prefix}${icone[i].name}"></i>
+        <span class="${icone[i].name}"></span>
     </div>
 	`
 }
 console.log(elements);
+
+//inserisco gli elementi creati nel container
+const itemsContainer = document.getElementById("container");
+
+// output HTML
+itemsContainer.innerHTML = elements;
+
+//
+
