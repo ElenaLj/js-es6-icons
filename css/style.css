@@ -12,6 +12,18 @@ body {
 #container  {
     margin: 0 auto;
     width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 100px;
+    height: 50px;
+    background-color: #e1e6e6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
 }
 
 i {
