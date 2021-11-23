@@ -123,7 +123,7 @@ for (let i = 0; i < icone.length; i++) {
 	elements += `
 	<div class="box">
         <i class="${icone[i].family} ${icone[i].prefix}${icone[i].name}"></i>
-        <span class="${icone[i].name}"></span>
+        <span>${icone[i].name}</span>
     </div>
 	`
 }
