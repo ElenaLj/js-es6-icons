@@ -135,7 +135,37 @@ const icone = [
 // itemsContainer.innerHTML = elements;
 
 
-//Milestone 1 con metodo forEach + Milestone 2
+//Milestone 1 con metodo forEach + Milestone 2 + Milestone 3
+
+//variabile del pulsante run
+const runButton = document.getElementById("run");
+
+runButton.addEventListener("click", function(){
+
+	//variabile per prendere il valore delle icone
+	const selectIcon = document.getElementById("icone").value;
+	// console.log(selectIcon);
+
+	//switch per la selezione delle icone
+	switch (selectIcon) {
+		case "animal":
+			// console.log("Ha scelto animal");
+		break;
+
+		case "vegetable":
+			// console.log("Ha scelto veggie");
+		break;
+
+		case "user":
+			// console.log("Ha scelto user");
+		break;
+
+		case "all":
+			// console.log("Ha scelto all");
+		break;
+	}
+});
+
 let elements = "";
 
 icone.forEach((icon) => {
