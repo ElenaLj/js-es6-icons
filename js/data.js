@@ -141,21 +141,24 @@ let elements = "";
 icone.forEach((icon) => {
 	elements += `
 	<div class="box">
-        <i class="${icon.family} ${icon.prefix}${icon.name}"></i>
+        <i class="${icon.family} ${icon.prefix}${icon.name} ${icon.color}"></i>
         <span>${icon.name}</span>
     </div>
 	`
-	if(icon.color == "orange") {
-		console.log("Orange");
-		elements.classList.add("orange");
-	} 
-	else if (icon.color == "green") {
-		console.log("Green");
-		elements.classList.add("green");
-	} else {
-		console.log("Blue");
-		elements.classList.add("blue");
-	}
+
+	// strada troppo complicata e non sono in grado!
+
+	// if(icon.color == "orange") {
+	// 	console.log("Orange");
+	// 	elements.classList.add("orange");
+	// } 
+	// else if (icon.color == "green") {
+	// 	console.log("Green");
+	// 	elements.classList.add("green");
+	// } else {
+	// 	console.log("Blue");
+	// 	elements.classList.add("blue");
+	// }
 });
 
 console.log(elements);
